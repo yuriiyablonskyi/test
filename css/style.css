@@ -94,6 +94,10 @@ input[type=text].red {
     border-color: rgba(255, 0, 0, 0.4392156863);
 }
 
+.red-abc {
+    border-color: rgba(255, 0, 0, 0.4392156863) !important;
+}
+
 .header {
     background: #5b5bff;
     position: fixed;
