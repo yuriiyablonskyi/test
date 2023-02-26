@@ -1,0 +1,357 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/jost/Jost-Regular.woff2") format("woff2");
+  src: url("../fonts/jost/Jost-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/jost/Jost-Bold.woff2") format("woff2");
+  src: url("../fonts/jost/Jost-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Jost";
+  background-color: с #e3dece;
+  margin-top: 70px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.countdown {
+  border: 3px solid #8686f2;
+  border-radius: 12px;
+  padding: 5px 10px;
+  color: #8686f2;
+}
+
+.abc__item.green {
+  border-color: #86ec56;
+}
+
+.abc__item.example {
+  border-color: #5d615a;
+}
+
+.abc__item.example label {
+  cursor: auto;
+}
+
+.abc__item.example label:hover {
+  color: inherit;
+}
+
+.selected-first {
+  background: rgba(195, 245, 174, 0.3098039216) !important;
+}
+
+.selected {
+  background: rgba(0, 0, 0, 0.4235294118) !important;
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+input[type=text]:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.6980392157);
+}
+input[type=text].red {
+  border-color: rgba(255, 0, 0, 0.4392156863);
+}
+
+.header {
+  background: #5b5bff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.3s linear;
+}
+.header__inner {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.header__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__link {
+  text-transform: uppercase;
+  opacity: 0.5;
+  display: inline-block;
+  border: 2px solid transparent;
+  position: relative;
+  border-radius: 8px;
+  padding: 10px 25px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.header__link:hover {
+  opacity: 1;
+  border-color: #fff;
+}
+.header__link:hover:before {
+  transform: scaleY(0);
+}
+.header__link:hover:after {
+  transform: scaleX(0);
+}
+.header__link span {
+  position: relative;
+  z-index: 3;
+}
+
+.active_link {
+  opacity: 1;
+}
+
+.active_link:before {
+  transform: scaleY(0);
+}
+
+.active_link:after {
+  transform: scaleX(0);
+}
+
+.abc__title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.abc__options {
+  padding-left: 45px;
+}
+.abc__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.abc__item {
+  width: 300px;
+  width: 361px;
+  padding: 15px 15px;
+  border: 3px solid #8686f2;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.abc__text {
+  display: inline-block;
+  margin-bottom: 5px;
+  position: relative;
+  transition: 0.2s;
+}
+.abc__text::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 1px;
+  height: 25px;
+  width: 25px;
+  border: 3px solid #8686f2;
+  border-radius: 50%;
+}
+.abc__text:after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -24px;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: #8686f2;
+  opacity: 0;
+  transition: 0.4s;
+}
+.abc__text:hover {
+  color: #a0a0f8;
+  cursor: pointer;
+}
+.abc__radio {
+  position: absolute;
+  visibility: hidden;
+}
+.abc__radio:checked ~ .abc__text:after {
+  opacity: 1;
+}
+.abc__radio:hover ~ .abc__text:before {
+  border-color: #731212;
+}
+
+.alert {
+  width: 300px;
+  background-color: #f15c5c;
+  color: #0e0e0e;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  position: fixed;
+  top: 159px;
+  display: none;
+}
+
+.close {
+  position: absolute;
+  top: -6px;
+  right: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.close:hover {
+  transform: scale(1.3);
+}
+
+.table {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 5px;
+  background-color: rgba(218, 214, 214, 0.431372549);
+  padding: 3px;
+}
+.table th {
+  font-size: 18px;
+  padding: 10px;
+}
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.table td {
+  border: 1px solid #000;
+}
+.table .default {
+  background-color: #fff;
+}
+.table .number {
+  padding: 13px;
+}
+.table .text {
+  padding: 10px;
+}
+.table .test {
+  background-color: #aaaaaa;
+}
+.table .left {
+  padding: 8px;
+  text-align: center;
+}
+.table .right {
+  padding: 10px;
+}
+.table_label {
+  display: block;
+  height: 100%;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
+}
+.table_radio {
+  position: absolute;
+  visibility: hidden;
+}
+.table_radio:checked ~ .table_label {
+  background-color: rgba(0, 0, 0, 0.7411764706);
+  background-color: #fff;
+  opacity: 1;
+}
+.table .test_table {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 700;
+}
+.table p {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.test_label label {
+  padding-top: 8px;
+}
+
+.show-table tr.red {
+  background: #ffa4a4 !important;
+}
+
+.show-table tr.green {
+  background: #b7eb9e !important;
+}
+
+.table-container-second {
+  margin-bottom: 20px;
+}
+.table-container-second td:nth-child(odd) {
+  min-width: 70px;
+  text-align: center;
+}
+
+.table_input {
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.4392156863);
+  border-radius: 5px;
+}
+.table_input .number {
+  padding: 5px;
+}
+.table_input .text {
+  border-radius: 5px;
+  text-align: center;
+  color: #000;
+  background: rgba(218, 214, 214, 0.8901960784);
+}
+.table_input .test_table {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 700;
+}
+.table_input input {
+  max-width: 40px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.4862745098);
+}
+.table_input .input_td {
+  background-color: #fff;
+}
+.table_input .table_input_el.red {
+  background-color: #dd8585;
+}
+.table_input .table_input_el.green {
+  background-color: #95e07d;
+}

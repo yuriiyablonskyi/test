@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <nav class="header__nav">
+        <a class="header__link test" href="#about"><span>Test</span></a>
+        <a class="header__link test1" href="#works"><span>Jak kozystac</span></a>
+        <a class="header__link test2" href="#contact"><span>Contact</span></a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+  <div class="container">
+  <span class="countdown"></span>
+  <div class="alert">Виберіть всі варіанти!<span class="close">x</span></div>
+
+  <div class="info-box">
+    <h3 class="info-box__title">ROZUMIENIE ZE SŁUCHU</h3>
+    <div class="info-box__wrapper">
+      <p class="info-box__left">5 zadań, 25 minut</p>
+      <p class="info-box__right">Liczba punktów: <span class="all-score"> ______ </span> / 30 p.</p>
+    </div>
+  </div>
+
+  <div class="abc">
+    <div class="instruction">
+      <p>I. Proszę uważnie słuchać tego nagrania i zaznaczać właściwe odpowiedzi.
+        Uwaga! Nagranie zostanie odtworzone tylko jeden raz!</p>
+      <p class="instruction__score"><span class="all-score">_____</span> / 7 p. (14 x 0,5 p.) </p>
+    </div>
+
+    <div class="abc__item example">
+      <h4 class="abc__title"> Przykład:</h4>
+      <h4 class="abc__title">0. Ta wypowiedź jest typowa</h4>
+      <ul class="abc__options">
+        <li class="abc__answer">
+          <input class="abc__radio" type="radio" id="example_0_1" name="example" disabled>
+          <label class="abc__text" for="example_0_1">a) na dworcu autobusowym.</label>
+        </li>
+
+        <li class="abc__answer">
+          <input class="abc__radio" type="radio" id="example_0_2" name="example" disabled checked="checked">
+          <label class="abc__text" for="example_0_2">b) na dworcu kolejowym.</label>
+        </li>
+
+        <li class="abc__answer">
+          <input class="abc__radio" type="radio" id="example_0_3" name="example" disabled>
+          <label class="abc__text" for="example_0_3">c) w kolejce górskiej.</label>
+        </li>
+      </ul>
+    </div>
+
+
+    <ul class="abc__list abc__list--first"></ul>
+  </div>
+
+  <div class="text">
+    <div class="instruction">
+      <p>II. Proszę uważnie słuchać tego nagrania i wykonywać zadanie zgodnie z podanym
+        przykładem. Uwaga! Nagranie zostanie odtworzone dwa razy. </p>
+      <p class="instruction__score"><span class="all-score">_____</span> / 7 p. (7 x 1 p.) </p>
+      <p class="instruction__info">Proszę wpisać brakujące słowa</p>
+    </div>
+
+    <div class="text__content">Dzień dobry Państwu. Są tacy <!-- <input class="input" type="text" ludzie> -->
+      , którzy od dzieciństwa
+      <input class="input" type="text" 1>
+      1 wiek dojrzały po starość mieszkają w jednej miejscowości,
+      nieraz też i w jednym domu, natomiast są <input class="input" type="text" 2>
+      rzesze tych, którzy po
+      osiągnięciu pewnego wieku zmieniają miejsce zamieszkania, mieszkają w internacie, uczą się,
+      <input class="input" type="text" 3>
+      , później zawierają związek małżeński i gdzieś tam swoje
+      pierwsze mieszkanie zaczynają meblować. Proszę chwilę pomyśleć o tym
+      <input class="input" type="text" 4>
+      4 pierwszym mieszkaniu. Kiedy państwo tam zamieszkali, pewnie
+      były świeżo pomalowane ściany, zawsze były pewne pomysły na takie czy inne
+      umeblowanie, czy takie czy inne pomysły na to, co się <input class="input" type="text" 5> na
+      ścianach. Bo oczywiście mijają lata, pięć, dziesięć, piętnaście lat i człowiek się zżywa z tymi
+      czterema ścianami, ale zawsze był ten <input class="input" type="text" 6>
+      6
+      , kiedy po raz pierwszy
+      zobaczyło się te cztery ściany, przysłowiowe, widok z okna, który nam
+      <input class="input" type="text" 7>
+      7 przez tyle lat. Warto pomyśleć o tym miejscu, w którym
+      mieszkamy.
+    </div>
+  </div>
+
+  <div class="abc">
+    <div class="instruction">
+      <p>III. Proszę uważnie słuchać tego nagrania i wykonywać zadanie zgodnie z podanym przykładem. Uwaga! Nagranie
+        zostanie odtworzone dwa razy.</p>
+      <p class="instruction__score"><span class="all-score">_____</span> / 5 p. (5 x 1 p.)</p>
+      <p class="instruction__info">Proszę zaznaczyć właściwe odpowiedzi.</p>
+    </div>
+
+    <ul class="abc__list abc__list--second"></ul>
+  </div>
+
+  <div>
+    <div class="instruction">
+      <p>IV. Proszę uważnie słuchać tego nagrania i wykonywać zadanie zgodnie z podanym przykładem. Uwaga! Nagranie
+        zostanie odtworzone dwa razy.</p>
+      <p class="instruction__score"><span class="local-score">_____</span> / 6 p. (6 x 1 p.)</p>
+      <p class="instruction__info">Proszę zaznaczyć: TAK – gdy zdanie jest zgodne z tekstem; NIE – gdy nie jest zgodne z
+        tekstem.</p>
+    </div>
+
+
+    <table class="table"></table>
+    <div><button class="test_table_btn">Test table</button></div>
+  </div>
+
+
+  <div class="table-block"><!-- js -->
+    <div class="instruction">
+      <p>V. Proszę uważnie słuchać tego nagrania i wykonywać zadanie zgodnie z podanym przykładem. Uwaga! Nagranie
+        zostanie odtworzone dwa razy.</p>
+      <p class="instruction__score"><span class="local-score">_____</span> / 5 p. (5 x 1 p.)</p>
+      <p class="instruction__info">Proszę połączyć wypowiedzi z kolumny I z wypowiedziami z kolumny II. Proszę wpisać
+        odpowiedzi do tabelki.</p>
+    </div>
+    <div class="table-container-second"></div>
+
+
+
+
+    <table class="table_input">
+      <tr class="test_label">
+        <td class="text">0.</td>
+        <td class="text">1.</td>
+        <td class="text">2.</td>
+        <td class="text">3.</td>
+        <td class="text">4.</td>
+        <td class="text">5.</td>
+      </tr>
+      <tr class="test_label">
+        <td class="text input_td">
+          <input class="table_input_el" data-input="0" maxlength="1" type="text">
+        </td>
+        <td class="text input_td">
+          <input class="table_input_el" data-input="1" maxlength="1" type="text">
+        </td>
+        <td class="text input_td">
+          <input class="table_input_el" data-input="2" maxlength="1" type="text">
+        </td>
+        <td class="text input_td">
+          <input class="table_input_el" data-input="3" maxlength="1" type="text">
+        </td>
+        <td class="text input_td">
+          <input class="table_input_el" data-input="4" maxlength="1" type="text">
+        </td>
+        <td class="text input_td">
+          <input class="table_input_el" data-input="5" maxlength="1" type="text">
+        </td>
+      </tr>
+    </table>
+
+
+    <!-- <table class="table"></table> -->
+    <div><button class="test_table_btn1">Test table1</button></div>
+  </div>
+
+  <table class="table_third"></table>
+  <div class="my-table-text">
+    Obecnie większość czasu spędzamy w
+    <input class="my-table-text-input selected" type="text" placeholder="A" maxlength="1" disabled>.
+    Unikamy wysiłku, nie chodzimy na piechotę, a w wolnym czasie zamiast na przykład pójść
+    <input class="my-table-text-input" type="text" placeholder="1" maxlength="1"> oglądać telewizję. Tak jest
+    nam wygodniej.
+    Jeśli chcesz poprawić kondycję fizyczną bez
+    <input class="my-table-text-input" type="text" placeholder="2" maxlength="1">, wybierz łatwy i tani sposób, czyli
+    spacer. Ruch potrzebny jest wszystkim –
+    <input class="my-table-text-input" type="text" placeholder="3" maxlength="1">. Największym plusem spacerów jest to, że
+    nie musimy kupować żadnego specjalistycznego sprzętu. Trzeba mieć tylko wygodne buty.
+    Co więcej,
+    <input class="my-table-text-input" type="text" placeholder="4" maxlength="1"> i przy każdej pogodzie. Najlepiej
+    spacerować w
+    <input class="my-table-text-input" type="text" placeholder="5" maxlength="1"> i miejskiego ruchu – człowiek najlepiej
+    wypoczywa na łonie przyrody.
+    Już jedna godzina spaceru dziennie
+    <input class="my-table-text-input" type="text" placeholder="6" maxlength="1">. Powinien to być jednak wtedy intensywny
+    marsz, w tempie 5 – 6 kilometrów na godzinę.
+    Odmianą spaceru jest popularny także w Polsce nordic walking, czyli dynamiczny marsz z kijkami. Ogromną zaletą tej
+    formy ruchu jest to, że można go polecić wszystkim, a zwłaszcza
+    <input class="my-table-text-input" type="text" placeholder="7" maxlength="1">7. Jest on bowiem bezpieczną formą
+    aktywności, połączonej ze spędzaniem czasu na świeżym powietrzu.
+  </div>
+
+  <table id="my-table"></table>
+
+</div>
+  <footer class="footer">
+  <div class="container">
+    <h2>footer</h2>
+    <audio Volume controls muted autoplay src="./audio/b1/2017.mp3"></audio>
+  </div>
+</footer>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
